@@ -1,0 +1,51 @@
+.site-icon {
+  width: 36px;
+  height: 36px;
+  background-color: var(--primary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: white;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.detail-site-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: white;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.favicon-img {
+  background-color: #ffffff;
+  border: 1px solid var(--border);
+  padding: 4px;
+  object-fit: contain;
+}
+
+img.site-icon {
+  border-radius: 10px;
+}
+
+img.detail-site-icon {
+  border-radius: 12px;
+}
+
+.fallback-icon {
+  background-color: #f2ebff !important;
+  border: 1px solid #e2d7fc;
+}
+
+.fallback-svg {
+  color: #7a4cb8;
+}

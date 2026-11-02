@@ -1,0 +1,114 @@
+/* Discard Confirmation Dialog styling */
+.discard-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 2000; /* Must be higher than edit modal (1000) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.discard-dialog {
+  background-color: #ffffff;
+  border-radius: 16px;
+  width: 440px;
+  max-width: 90%;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.discard-dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discard-dialog-header h3 {
+  font-family: 'InterVariable', var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  color: #1e1b24;
+}
+
+.discard-dialog-header .close-btn {
+  background: transparent;
+  color: var(--text-muted);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.discard-dialog-header .close-btn:hover {
+  color: var(--text-main);
+  background-color: var(--bg-hover);
+}
+
+.discard-dialog-body {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.discard-dialog-accent-line {
+  width: 3px;
+  height: 24px;
+  background-color: #dc2626; /* Red color */
+  border-radius: 4px;
+}
+
+.discard-dialog-text {
+  font-family: 'InterVariable', var(--font-family);
+  font-size: 15px;
+  color: #52527a;
+}
+
+.discard-dialog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.discard-btn-cancel {
+  background-color: #ffffff;
+  color: #52527a;
+  border: 1px solid #e8e2f8;
+  border-radius: 999px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.discard-btn-cancel:hover {
+  background-color: #f4f0fe;
+}
+
+.discard-btn-confirm, .delete-btn-confirm {
+  background-color: #c92a47; /* Crimson/red */
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.discard-btn-confirm:hover, .delete-btn-confirm:hover {
+  background-color: #b0203a;
+}
